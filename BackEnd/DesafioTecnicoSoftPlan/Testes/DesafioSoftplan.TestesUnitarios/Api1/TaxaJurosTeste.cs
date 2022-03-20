@@ -1,7 +1,7 @@
 using DesafioSoftplan.Api1.Aplicacao;
 using Xunit;
 
-namespace DesafioSoftplan.TestesUnitarios
+namespace DesafioSoftplan.TestesUnitarios.Api1
 {
     public class TaxaJurosTeste
     {
