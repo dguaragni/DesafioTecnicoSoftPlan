@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Apresentacao\DesafioSoftplan.Api1\DesafioSoftplan.Api1.csproj" />
+    <ProjectReference Include="..\..\Apresentacao\DesafioSoftplan.Api2\DesafioSoftplan.Api2.csproj" />
   </ItemGroup>
 
 </Project>
