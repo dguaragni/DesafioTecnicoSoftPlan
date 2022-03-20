@@ -10,7 +10,7 @@ namespace DesafioSoftplan.Api2.Controllers
         [HttpGet(Name = "showmethecode")]
         public IActionResult Get()
         {
-            return Ok("https://github.com/dguaragni/desafiosoftplan");
+            return Ok("https://github.com/dguaragni/DesafioTecnicoSoftPlan");
         }
     }
 }
