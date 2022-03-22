@@ -1,0 +1,41 @@
+<div class="container">
+  <h4>Informe os dados abaixo para realizar o calculo do valor final</h4>
+  <br />
+  <div>
+    <div class="mb-3">
+      <label for="valor" class="form-label">Valor</label>
+      <input
+        type="number"
+        class="form-control"
+        id="valor"
+        size="10"
+        min="0"
+        step="1"
+        [(ngModel)]="this.valorInicial"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Meses</label>
+      <input
+        type="number"
+        class="form-control"
+        id="meses"
+        min="0"
+        step="1"
+        [(ngModel)]="this.qtdMeses"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="calcularJuros()">
+      Calcular
+    </button>
+  </div>
+  <br />
+  <br />
+  <h5 *ngIf="this.valorFinalCalculado > 0">
+    Valor final calculado:
+    {{ this.valorFinalCalculado | currency: "BRL":"symbol":"1.2-2" }}
+  </h5>
+  <br />
+  <br />
+  <h6>Taxa de juros utilizada: {{ this.taxaJuros }}%</h6>
+</div>

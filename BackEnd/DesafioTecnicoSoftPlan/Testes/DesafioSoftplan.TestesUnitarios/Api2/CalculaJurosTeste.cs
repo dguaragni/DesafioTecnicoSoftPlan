@@ -16,7 +16,7 @@ namespace DesafioSoftplan.TestesUnitarios.Api2
             // Arrange 
             var taxaJuros = new TaxaJurosMock();
             var calculaJuros = new CalculaJurosApl(taxaJuros);
-            var calculaJurosDto = new CalculaJurosDto() { ValorInicial = valorInicial, Meses = meses };
+            var calculaJurosDto = new CalculaJurosDto() { Valor = valorInicial, Meses = meses };
 
             // Act 
             var resultado = await calculaJuros.CalculaJuros(calculaJurosDto);

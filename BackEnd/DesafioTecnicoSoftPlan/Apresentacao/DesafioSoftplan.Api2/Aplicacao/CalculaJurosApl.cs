@@ -17,7 +17,7 @@ namespace DesafioSoftplan.Api2.Aplicacao
             var taxaJuros = (1 + await _taxaJuros.ObtemTaxaJuros());
             taxaJuros = (decimal)Math.Pow((double)taxaJuros, (double)dadosCalculaJuros.Meses);
 
-            var resultado = dadosCalculaJuros.ValorInicial * taxaJuros;
+            var resultado = dadosCalculaJuros.Valor * taxaJuros;
             resultado = decimal.Round(resultado, 2);
 
             return new ResultadoCalculaJurosDto() { ValorFinal = resultado };

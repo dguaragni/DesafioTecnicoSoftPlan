@@ -21,6 +21,8 @@ try
         app.UseSwaggerUI();
     }
 
+    app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod() );
+
     app.UseHttpsRedirection();
 
     app.UseAuthorization();
