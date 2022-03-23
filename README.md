@@ -43,5 +43,6 @@ OBS: Caso seja necessário alterar a porta em que a API1 irá rodar, será neces
 3) Executar o comando "npm install -g @angular/cli"
 4) Executar o comando "npm install"
 4) Executar o comando "ng serve -o"
-5) O browser padrão do sistema será executado  e irár abir  uma página que simula uma simples calculadora de juros, que realiza o acesso ás duas APIs que foram criadas devem estar executando no localhost conforme descrito em um tópico acima.
+5) O browser padrão do sistema será executado  e irár abir  uma página que simula uma simples calculadora de juros, que realiza o acesso ás duas APIs que foram criadas e que devem estar executando no localhost conforme descrito em um tópico acima.
+ 
 OBS: Caso seja necessário alterar a porta em que a API1 e a API2 estarão disponíveis, será necessário alterar a propriedade *urlApiTaxaJuros* e *urlApiCalculaJuros* no arquivo \FrontEnd\CalculadoraJuros\src\environments\environment.ts.
